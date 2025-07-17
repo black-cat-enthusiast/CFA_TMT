@@ -1,0 +1,72 @@
+"0","library(tidyverse)"
+"0","library(reshape2)"
+"0","library(rstatix)"
+"0","library(tidytable)"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"2","Warning: tidytable was loaded after dplyr.
+This can lead to most dplyr functions being overwritten by tidytable functions.
+"
+"2","Warning: tidytable was loaded after tidyr.
+This can lead to most tidyr functions being overwritten by tidytable functions.
+"
+"2","
+Attaching package: ‘tidytable’
+
+"
+"2","The following objects are masked from ‘package:rstatix’:
+
+    desc, drop_na, filter, group_by, mutate, select
+
+"
+"2","The following objects are masked from ‘package:dplyr’:
+
+    across, add_count, add_tally, anti_join, arrange, between,
+    bind_cols, bind_rows, c_across, case_match, case_when, coalesce,
+    consecutive_id, count, cross_join, cume_dist, cur_column, cur_data,
+    cur_group_id, cur_group_rows, dense_rank, desc, distinct, filter,
+    first, full_join, group_by, group_cols, group_split, group_vars,
+    if_all, if_any, if_else, inner_join, is_grouped_df, lag, last,
+    lead, left_join, min_rank, mutate, n, n_distinct, na_if, nest_by,
+    nest_join, nth, percent_rank, pick, pull, recode, reframe,
+    relocate, rename, rename_with, right_join, row_number, rowwise,
+    select, semi_join, slice, slice_head, slice_max, slice_min,
+    slice_sample, slice_tail, summarise, summarize, tally, top_n,
+    transmute, tribble, ungroup
+
+"
+"2","The following objects are masked from ‘package:purrr’:
+
+    map, map_chr, map_dbl, map_df, map_dfc, map_dfr, map_int, map_lgl,
+    map_vec, map2, map2_chr, map2_dbl, map2_df, map2_dfc, map2_dfr,
+    map2_int, map2_lgl, map2_vec, pmap, pmap_chr, pmap_dbl, pmap_df,
+    pmap_dfc, pmap_dfr, pmap_int, pmap_lgl, pmap_vec, walk
+
+"
+"2","The following objects are masked from ‘package:tidyr’:
+
+    complete, crossing, drop_na, expand, expand_grid, extract, fill,
+    nest, nesting, pivot_longer, pivot_wider, replace_na, separate,
+    separate_longer_delim, separate_rows, separate_wider_delim,
+    separate_wider_regex, tribble, uncount, unite, unnest,
+    unnest_longer, unnest_wider
+
+"
+"2","The following objects are masked from ‘package:tibble’:
+
+    enframe, tribble
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    dt, filter, lag
+
+"
+"2","The following object is masked from ‘package:base’:
+
+    %in%
+
+"
+"0","knitr::include_graphics(""Figs/4_Mety_Frz_panel.png"")"

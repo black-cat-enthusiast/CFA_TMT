@@ -1,0 +1,9 @@
+"0","b <- a %>%"
+"0","  melt(id.vars = c(""ID"", ""Paw"", ""CFA"")) %>%"
+"0","  filter(Paw == ""Right"") %>%"
+"0","  ungroup()"
+"0",""
+"0","anova_test(data = b, dv = value, within = variable, between = CFA, wid = ID)"
+"2","Error in assertthat_dv_is_numeric(.) : 
+  The dependent variable 'dv' should be numeric
+"

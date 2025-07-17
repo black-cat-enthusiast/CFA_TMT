@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Figure 2 | _main.knit</title>
+  <meta name="description" content="This bookdown project contains raw data, data analyses, and code to generate analyses for the paper “A history of injury enhances affective and sensory responses to predator threat via sensitization of corticosterone release through TRPA1 receptor signaling”." />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Figure 2 | _main.knit" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This bookdown project contains raw data, data analyses, and code to generate analyses for the paper “A history of injury enhances affective and sensory responses to predator threat via sensitization of corticosterone release through TRPA1 receptor signaling”." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Figure 2 | _main.knit" />
+  
+  <meta name="twitter:description" content="This bookdown project contains raw data, data analyses, and code to generate analyses for the paper “A history of injury enhances affective and sensory responses to predator threat via sensitization of corticosterone release through TRPA1 receptor signaling”." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="figure-1.html"/>
+<link rel="next" href="figure-3.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CFA.TMT: A Book of Data</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html"><i class="fa fa-check"></i>Figure 1</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#time-spent-freezing-during-tmt"><i class="fa fa-check"></i>Time Spent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#frequency-of-freezing-during-tmt"><i class="fa fa-check"></i>Frequency of Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#linear-relationship-between-time-with-tmt-and-length-of-freeze"><i class="fa fa-check"></i>Linear relationship between Time With TMT and Length of Freeze</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#percent-freezing-split-by-minute-with-tmt"><i class="fa fa-check"></i>Percent Freezing Split by Minute With TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#analysis-of-distribution-of-length-of-freezing-bouts"><i class="fa fa-check"></i>Analysis of Distribution of Length of Freezing Bouts</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-2.html"><a href="figure-2.html"><i class="fa fa-check"></i>Figure 2</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-2.html"><a href="figure-2.html#von-frey-paw-sensitivity-after-tmt"><i class="fa fa-check"></i>Von Frey Paw Sensitivity After TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-2.html"><a href="figure-2.html#hot-plate-test"><i class="fa fa-check"></i>Hot Plate Test</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-3.html"><a href="figure-3.html"><i class="fa fa-check"></i>Figure 3</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-3.html"><a href="figure-3.html#overall-effects-of-stress-and-timepoint"><i class="fa fa-check"></i>Overall Effects of Stress and Timepoint</a></li>
+<li class="chapter" data-level="" data-path="figure-3.html"><a href="figure-3.html#follow-ups-effect-of-cfa-at-each-timepoint"><i class="fa fa-check"></i>Follow Ups: Effect of CFA at Each Timepoint</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html"><i class="fa fa-check"></i>Figure 4</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html#time-spent-freezing-behavior-during-tmt"><i class="fa fa-check"></i>Time Spent Freezing Behavior During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html#raw-vf-scores"><i class="fa fa-check"></i>Raw VF scores</a></li>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html#vf-thresholds-relative-to-baseline-measurements"><i class="fa fa-check"></i>VF Thresholds Relative to Baseline Measurements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-5.html"><a href="figure-5.html"><i class="fa fa-check"></i>Figure 5</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-5.html"><a href="figure-5.html#effect-of-cfa-for-saline-treated-mice"><i class="fa fa-check"></i>Effect of CFA for Saline-Treated Mice</a></li>
+<li class="chapter" data-level="" data-path="figure-5.html"><a href="figure-5.html#no-effect-of-cfa-for-metyrapone-treated-mice"><i class="fa fa-check"></i>No Effect of CFA for Metyrapone-Treated Mice</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html"><i class="fa fa-check"></i>Figure 6</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#blood-cort-levels"><i class="fa fa-check"></i>Blood CORT Levels</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#percent-freezing-during-tmt"><i class="fa fa-check"></i>Percent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#freezing-frequency-during-tmt"><i class="fa fa-check"></i>Freezing Frequency During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#freezing-during-each-minute-of-tmt"><i class="fa fa-check"></i>Freezing During Each Minute of TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#linear-relationship-between-time-and-length-of-freeze"><i class="fa fa-check"></i>Linear Relationship Between Time and Length of Freeze</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#analysis-of-distribution-of-length-of-freezing-episodes"><i class="fa fa-check"></i>Analysis of Distribution of Length of Freezing Episodes</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#von-frey-thresholds-after-tmt"><i class="fa fa-check"></i>Von Frey Thresholds After TMT</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-7.html"><a href="figure-7.html"><i class="fa fa-check"></i>Figure 7</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-1.html"><a href="supplemental-figure-1.html"><i class="fa fa-check"></i>Supplemental Figure 1</a>
+<ul>
+<li class="chapter" data-level="" data-path="supplemental-figure-1.html"><a href="supplemental-figure-1.html#raw-vf-values"><i class="fa fa-check"></i>Raw VF Values</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-1.html"><a href="supplemental-figure-1.html#within-subjects-changes-in-vf-threasholds"><i class="fa fa-check"></i>Within-Subjects’ Changes in VF Threasholds</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-2.html"><a href="supplemental-figure-2.html"><i class="fa fa-check"></i>Supplemental Figure 2</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html"><i class="fa fa-check"></i>Supplemental Figure 3</a>
+<ul>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#cort-levels"><i class="fa fa-check"></i>CORT Levels</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#time-spent-freezing-during-tmt-1"><i class="fa fa-check"></i>Time Spent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#freezing-frequency-during-tmt-1"><i class="fa fa-check"></i>Freezing Frequency During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#freezing-each-minute-with-tmt"><i class="fa fa-check"></i>Freezing Each Minute With TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#linear-relationship-between-time-and-length-of-freeze-1"><i class="fa fa-check"></i>Linear Relationship Between Time and Length of Freeze</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#von-frey-paw-sensitivity"><i class="fa fa-check"></i>Von Frey Paw Sensitivity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-4.html"><a href="supplemental-figure-4.html"><i class="fa fa-check"></i>Supplemental Figure 4</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html"><i class="fa fa-check"></i>Supplemental Figure 5</a>
+<ul>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#cort-levels-1"><i class="fa fa-check"></i>CORT Levels</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#time-spent-freezing-during-tmt-2"><i class="fa fa-check"></i>Time Spent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#frequency-of-freezing-during-tmt-1"><i class="fa fa-check"></i>Frequency of Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#length-of-freezing-bouts"><i class="fa fa-check"></i>Length of Freezing Bouts</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#von-frey-sensitivity"><i class="fa fa-check"></i>Von Frey Sensitivity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-6.html"><a href="supplemental-figure-6.html"><i class="fa fa-check"></i>Supplemental Figure 6</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="figure-2" class="section level1 unnumbered hasAnchor">
+<h1>Figure 2<a href="figure-2.html#figure-2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="Figs/2_TMT_VF.png" width="2700" /></p>
+<p><strong>Figure 2. <em>A history of injury facilitates chronification of TMT-induced mechanical hypersensitivity.</em></strong> (A) Timeline for behavioral testing: Naive for CFA-primed mice were exposed to TMT for five-minutes, and von Frey (VF) paw withdrawal thresholds were repeatedly measured to investigate TMT-induced alterations in sensory thresholds. (B) VF raw withdrawal thresholds after TMT in the previously injured hind paw. (C) VF paw withdrawal thresholds after TMT in the right (not injured) hindpaw. (D) VF paw withdrawal thresholds 60 days after the single exposure to TMT. (E) VF paw withdrawal thresholds 180 days after the single TMT session. (F) To further characterize the nature of the persistent hypersensitive phenotype, we used a 45 second hotplate test 70 days after the TMT exposure. (G) Raster plots showing nociceptive responses (e.g., shaking, flinching) during the hot plate test. (H) Latency to exhibit the first nociceptive response on the hot plate. (I) Mice with a history of injury spent more time exhibiting nociceptive responses. (J) The frequency of nociceptive behaviors on the hotplate was also higher for CFA-primed mice. (K) Cumulative frequency of nociceptive responses across the 45 second hot plate test. Data displayed as mean +/- SEM. *** indicates <em>p</em> &lt; 0.001.</p>
+<div id="von-frey-paw-sensitivity-after-tmt" class="section level2 unnumbered hasAnchor">
+<h2>Von Frey Paw Sensitivity After TMT<a href="figure-2.html#von-frey-paw-sensitivity-after-tmt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="figure-2.html#cb19-1" tabindex="-1"></a><span class="co"># Left</span></span>
+<span id="cb19-2"><a href="figure-2.html#cb19-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> Left_Data <span class="sc">%&gt;%</span></span>
+<span id="cb19-3"><a href="figure-2.html#cb19-3" tabindex="-1"></a>  <span class="fu">melt</span>(<span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">&quot;ID&quot;</span>, <span class="st">&quot;Condition&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb19-4"><a href="figure-2.html#cb19-4" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb19-5"><a href="figure-2.html#cb19-5" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="figure-2.html#cb19-6" tabindex="-1"></a><span class="fu">anova_test</span>(<span class="at">data =</span> a, <span class="at">within =</span> variable, <span class="at">dv =</span> value, <span class="at">between =</span> Condition, <span class="at">wid =</span> ID)</span></code></pre></div>
+<pre><code>## ANOVA Table (type II tests)
+## 
+## $ANOVA
+##               Effect DFn DFd      F        p p&lt;.05   ges
+## 1          Condition   1  14 46.740 8.10e-06     * 0.567
+## 2           variable   9 126 21.226 1.93e-21     * 0.479
+## 3 Condition:variable   9 126 30.857 7.38e-28     * 0.572
+## 
+## $`Mauchly&#39;s Test for Sphericity`
+##               Effect     W     p p&lt;.05
+## 1           variable 0.017 0.548      
+## 2 Condition:variable 0.017 0.548      
+## 
+## $`Sphericity Corrections`
+##               Effect   GGe      DF[GG]    p[GG] p[GG]&lt;.05   HFe       DF[HF]
+## 1           variable 0.579 5.22, 73.01 2.56e-13         * 0.964 8.68, 121.48
+## 2 Condition:variable 0.579 5.22, 73.01 4.62e-17         * 0.964 8.68, 121.48
+##      p[HF] p[HF]&lt;.05
+## 1 9.48e-21         *
+## 2 6.13e-27         *</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="figure-2.html#cb21-1" tabindex="-1"></a><span class="co"># Right</span></span>
+<span id="cb21-2"><a href="figure-2.html#cb21-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> Right_Data <span class="sc">%&gt;%</span></span>
+<span id="cb21-3"><a href="figure-2.html#cb21-3" tabindex="-1"></a>  <span class="fu">melt</span>(<span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">&quot;ID&quot;</span>, <span class="st">&quot;Condition&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb21-4"><a href="figure-2.html#cb21-4" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb21-5"><a href="figure-2.html#cb21-5" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="figure-2.html#cb21-6" tabindex="-1"></a><span class="fu">anova_test</span>(<span class="at">data =</span> a, <span class="at">within =</span> variable, <span class="at">dv =</span> value, <span class="at">between =</span> Condition, <span class="at">wid =</span> ID)</span></code></pre></div>
+<pre><code>## ANOVA Table (type II tests)
+## 
+## $ANOVA
+##               Effect DFn DFd      F        p p&lt;.05   ges
+## 1          Condition   1  14 80.560 3.50e-07     * 0.621
+## 2           variable   9 126 17.556 1.50e-18     * 0.473
+## 3 Condition:variable   9 126 18.129 5.08e-19     * 0.481
+## 
+## $`Mauchly&#39;s Test for Sphericity`
+##               Effect     W     p p&lt;.05
+## 1           variable 0.004 0.104      
+## 2 Condition:variable 0.004 0.104      
+## 
+## $`Sphericity Corrections`
+##               Effect   GGe      DF[GG]    p[GG] p[GG]&lt;.05   HFe    DF[HF]
+## 1           variable 0.486 4.37, 61.19 4.50e-10         * 0.733 6.6, 92.4
+## 2 Condition:variable 0.486 4.37, 61.19 2.64e-10         * 0.733 6.6, 92.4
+##      p[HF] p[HF]&lt;.05
+## 1 3.62e-14         *
+## 2 1.63e-14         *</code></pre>
+<p>We measured von Frey (VF) paw withdrawal thresholds after TMT exposure to assess whether synthetic predator threat alters peripheral mechanical sensitivity (Figure 2A). A single five-minute exposure to TMT induced changes in paw withdrawal thresholds in the left (F9,126 = 21.23, p &lt; 0.001, Figure 2B) and right (F9,126 = 17.56, p &lt; 0.001, Figure 2C) hind paws that differed for pain-naive and CFA primed mice (Left hind paws: F9,126 = 30.86 p &lt; 0.001; Right hind paws: F9,126 = 18.13, p &lt; 0.001).</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="figure-2.html#cb23-1" tabindex="-1"></a><span class="do">## Left Paws</span></span>
+<span id="cb23-2"><a href="figure-2.html#cb23-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> Left_Data <span class="sc">%&gt;%</span></span>
+<span id="cb23-3"><a href="figure-2.html#cb23-3" tabindex="-1"></a>  <span class="fu">melt</span>(<span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">&quot;ID&quot;</span>,<span class="st">&quot;Condition&quot;</span>,<span class="st">&quot;Baseline&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb23-4"><a href="figure-2.html#cb23-4" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Perc_BL =</span> value <span class="sc">/</span> Baseline <span class="sc">*</span> <span class="dv">100</span>) </span>
+<span id="cb23-5"><a href="figure-2.html#cb23-5" tabindex="-1"></a>  </span>
+<span id="cb23-6"><a href="figure-2.html#cb23-6" tabindex="-1"></a><span class="fu">anova_test</span>(<span class="at">data =</span> a, <span class="at">dv =</span> Perc_BL, <span class="at">between =</span> Condition, <span class="at">within =</span> variable, <span class="at">wid =</span> ID)</span></code></pre></div>
+<pre><code>## ANOVA Table (type II tests)
+## 
+## $ANOVA
+##               Effect DFn DFd      F        p p&lt;.05   ges
+## 1          Condition   1  14 87.365 2.14e-07     * 0.670
+## 2           variable   8 112  6.793 3.03e-07     * 0.247
+## 3 Condition:variable   8 112 26.260 1.90e-22     * 0.559
+## 
+## $`Mauchly&#39;s Test for Sphericity`
+##               Effect     W     p p&lt;.05
+## 1           variable 0.015 0.114      
+## 2 Condition:variable 0.015 0.114      
+## 
+## $`Sphericity Corrections`
+##               Effect   GGe      DF[GG]    p[GG] p[GG]&lt;.05   HFe      DF[HF]
+## 1           variable 0.499 3.99, 55.91 1.59e-04         * 0.723 5.79, 81.02
+## 2 Condition:variable 0.499 3.99, 55.91 2.86e-12         * 0.723 5.79, 81.02
+##      p[HF] p[HF]&lt;.05
+## 1 9.44e-06         *
+## 2 7.74e-17         *</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="figure-2.html#cb25-1" tabindex="-1"></a>a <span class="sc">%&gt;%</span></span>
+<span id="cb25-2"><a href="figure-2.html#cb25-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(Condition) <span class="sc">%&gt;%</span></span>
+<span id="cb25-3"><a href="figure-2.html#cb25-3" tabindex="-1"></a>  <span class="fu">pairwise_t_test</span>(value <span class="sc">~</span> variable) <span class="sc">%&gt;%</span></span>
+<span id="cb25-4"><a href="figure-2.html#cb25-4" tabindex="-1"></a>  <span class="fu">filter</span>(group1 <span class="sc">==</span> <span class="st">&quot;Baseline&quot;</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 0 × 10
+## # ℹ 10 variables: Condition &lt;fct&gt;, .y. &lt;chr&gt;, group1 &lt;chr&gt;, group2 &lt;chr&gt;,
+## #   n1 &lt;int&gt;, n2 &lt;int&gt;, p &lt;dbl&gt;, p.signif &lt;chr&gt;, p.adj &lt;dbl&gt;,
+## #   p.adj.signif &lt;chr&gt;</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="figure-2.html#cb27-1" tabindex="-1"></a><span class="do">## Right Paws</span></span>
+<span id="cb27-2"><a href="figure-2.html#cb27-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> Right_Data <span class="sc">%&gt;%</span></span>
+<span id="cb27-3"><a href="figure-2.html#cb27-3" tabindex="-1"></a>  <span class="fu">melt</span>(<span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">&quot;ID&quot;</span>,<span class="st">&quot;Condition&quot;</span>,<span class="st">&quot;Baseline&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb27-4"><a href="figure-2.html#cb27-4" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Perc_BL =</span> value <span class="sc">/</span> Baseline <span class="sc">*</span> <span class="dv">100</span>) </span>
+<span id="cb27-5"><a href="figure-2.html#cb27-5" tabindex="-1"></a>  </span>
+<span id="cb27-6"><a href="figure-2.html#cb27-6" tabindex="-1"></a><span class="fu">anova_test</span>(<span class="at">data =</span> a, <span class="at">dv =</span> Perc_BL, <span class="at">between =</span> Condition, <span class="at">within =</span> variable, <span class="at">wid =</span> ID)</span></code></pre></div>
+<pre><code>## ANOVA Table (type II tests)
+## 
+## $ANOVA
+##               Effect DFn DFd      F        p p&lt;.05   ges
+## 1          Condition   1  14 32.047 5.88e-05     * 0.553
+## 2           variable   8 112  4.034 3.05e-04     * 0.117
+## 3 Condition:variable   8 112 19.234 6.18e-18     * 0.388
+## 
+## $`Mauchly&#39;s Test for Sphericity`
+##               Effect     W     p p&lt;.05
+## 1           variable 0.026 0.286      
+## 2 Condition:variable 0.026 0.286      
+## 
+## $`Sphericity Corrections`
+##               Effect   GGe     DF[GG]    p[GG] p[GG]&lt;.05  HFe       DF[HF]
+## 1           variable 0.596 4.76, 66.7 3.00e-03         * 0.94 7.52, 105.29
+## 2 Condition:variable 0.596 4.76, 66.7 1.59e-11         * 0.94 7.52, 105.29
+##      p[HF] p[HF]&lt;.05
+## 1 4.34e-04         *
+## 2 5.46e-17         *</code></pre>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="figure-2.html#cb29-1" tabindex="-1"></a>a <span class="sc">%&gt;%</span></span>
+<span id="cb29-2"><a href="figure-2.html#cb29-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(Condition) <span class="sc">%&gt;%</span></span>
+<span id="cb29-3"><a href="figure-2.html#cb29-3" tabindex="-1"></a>  <span class="fu">pairwise_t_test</span>(value <span class="sc">~</span> variable) <span class="sc">%&gt;%</span></span>
+<span id="cb29-4"><a href="figure-2.html#cb29-4" tabindex="-1"></a>  <span class="fu">filter</span>(group1 <span class="sc">==</span> <span class="st">&quot;Baseline&quot;</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 0 × 10
+## # ℹ 10 variables: Condition &lt;fct&gt;, .y. &lt;chr&gt;, group1 &lt;chr&gt;, group2 &lt;chr&gt;,
+## #   n1 &lt;int&gt;, n2 &lt;int&gt;, p &lt;dbl&gt;, p.signif &lt;chr&gt;, p.adj &lt;dbl&gt;,
+## #   p.adj.signif &lt;chr&gt;</code></pre>
+<p>For pain-naive mice, TMT-induced mechanical hypersensitivity resolved three days after exposure (left hind paws: all p &gt; 0.32; right hind paws: all p &gt; 0.15, relative to baseline measurements). In contrast, CFA-primed mice exhibited a persistent state of mechanical hypersensitivity after TMT exposure that did not resolve. The ongoing mechanical hypersensitivity expressed by CFA-primed mice was present both in the previously injured (left) hind paw (all p &lt; 0.012 relative to baseline measurements) and in the not-previously-injured right hind paw (all p &lt; 0.001 relative to baseline measurements).</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="figure-2.html#cb31-1" tabindex="-1"></a><span class="co"># 60 Days</span></span>
+<span id="cb31-2"><a href="figure-2.html#cb31-2" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> no_1D,  L_60D <span class="sc">~</span> Condition, <span class="at">var.equal =</span> T)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  L_60D by Condition
+## t = 7.761, df = 12, p-value = 5.122e-06
+## alternative hypothesis: true difference in means between group Naive and group CFA is not equal to 0
+## 95 percent confidence interval:
+##  0.4373241 0.7787102
+## sample estimates:
+## mean in group Naive   mean in group CFA 
+##           1.0093144           0.4012973</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="figure-2.html#cb33-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> no_1D, R_60D <span class="sc">~</span> Condition, <span class="at">var.equal =</span> T)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  R_60D by Condition
+## t = 8.4717, df = 12, p-value = 2.082e-06
+## alternative hypothesis: true difference in means between group Naive and group CFA is not equal to 0
+## 95 percent confidence interval:
+##  0.4831440 0.8177076
+## sample estimates:
+## mean in group Naive   mean in group CFA 
+##           1.1013267           0.4509009</code></pre>
+<p>Sixty days after the single TMT exposure, CFA-primed mice continued to exhibit lower paw withdrawal thresholds than pain-naive controls (F1,12 = 112.02, p &lt; 0.001, Figure 2D), and the hypersensitivity did not differ between the right and left hind paws (p = 0.68).</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="figure-2.html#cb35-1" tabindex="-1"></a><span class="co"># 180 Days</span></span>
+<span id="cb35-2"><a href="figure-2.html#cb35-2" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> no_1D, L_180D <span class="sc">~</span> Condition, <span class="at">var.equal =</span> T)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  L_180D by Condition
+## t = 9.2569, df = 9, p-value = 6.778e-06
+## alternative hypothesis: true difference in means between group Naive and group CFA is not equal to 0
+## 95 percent confidence interval:
+##  0.4694201 0.7730487
+## sample estimates:
+## mean in group Naive   mean in group CFA 
+##           0.9960839           0.3748495</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="figure-2.html#cb37-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> no_1D, R_180D <span class="sc">~</span> Condition, <span class="at">var.equal =</span> T)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  R_180D by Condition
+## t = 11.236, df = 9, p-value = 1.346e-06
+## alternative hypothesis: true difference in means between group Naive and group CFA is not equal to 0
+## 95 percent confidence interval:
+##  0.5633834 0.8474259
+## sample estimates:
+## mean in group Naive   mean in group CFA 
+##           1.0796716           0.3742669</code></pre>
+<p>The hypersensitivity remained detectable among CFA-primed mice 180 days after the single exposure (F1,9 = 165.45, p &lt; 0.001, Figure 2E) for both hind paws.</p>
+</div>
+<div id="hot-plate-test" class="section level2 unnumbered hasAnchor">
+<h2>Hot Plate Test<a href="figure-2.html#hot-plate-test" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="figure-2.html#cb39-1" tabindex="-1"></a><span class="co"># Latency to shake / flick</span></span>
+<span id="cb39-2"><a href="figure-2.html#cb39-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb39-3"><a href="figure-2.html#cb39-3" tabindex="-1"></a>  <span class="fu">group_by</span>(ID,CFA) <span class="sc">%&gt;%</span></span>
+<span id="cb39-4"><a href="figure-2.html#cb39-4" tabindex="-1"></a>  <span class="fu">filter</span>(Behavior <span class="sc">==</span> <span class="st">&quot;shake&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb39-5"><a href="figure-2.html#cb39-5" tabindex="-1"></a>  <span class="fu">filter</span>(CFA <span class="sc">!=</span> <span class="st">&quot;CFA_1_day&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb39-6"><a href="figure-2.html#cb39-6" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb39-7"><a href="figure-2.html#cb39-7" tabindex="-1"></a>    <span class="at">min=</span><span class="fu">min</span>(Start_clean)</span>
+<span id="cb39-8"><a href="figure-2.html#cb39-8" tabindex="-1"></a>  )</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;ID&#39;. You can override using the `.groups`
+## argument.</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="figure-2.html#cb41-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> a, min <span class="sc">~</span> CFA,<span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  min by CFA
+## t = 1.2107, df = 12, p-value = 0.2493
+## alternative hypothesis: true difference in means between group TMT_Only and group CFA_10_days is not equal to 0
+## 95 percent confidence interval:
+##  -1.794543  6.282959
+## sample estimates:
+##    mean in group TMT_Only mean in group CFA_10_days 
+##                 12.094333                  9.850125</code></pre>
+<p>There was no group difference in the latency to first nociceptive response (p = 0.25 Figure 2G,H).</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="figure-2.html#cb43-1" tabindex="-1"></a><span class="co"># Total time spent exhibiting nociceptive responses</span></span>
+<span id="cb43-2"><a href="figure-2.html#cb43-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb43-3"><a href="figure-2.html#cb43-3" tabindex="-1"></a>  <span class="fu">group_by</span>(ID,CFA) <span class="sc">%&gt;%</span></span>
+<span id="cb43-4"><a href="figure-2.html#cb43-4" tabindex="-1"></a>  <span class="fu">filter</span>(Behavior <span class="sc">==</span> <span class="st">&quot;shake&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb43-5"><a href="figure-2.html#cb43-5" tabindex="-1"></a>  <span class="fu">filter</span>(CFA <span class="sc">!=</span> <span class="st">&quot;CFA_1_day&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb43-6"><a href="figure-2.html#cb43-6" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb43-7"><a href="figure-2.html#cb43-7" tabindex="-1"></a>    <span class="at">sum=</span><span class="fu">sum</span>(Duration)</span>
+<span id="cb43-8"><a href="figure-2.html#cb43-8" tabindex="-1"></a>  )</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;ID&#39;. You can override using the `.groups`
+## argument.</code></pre>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="figure-2.html#cb45-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> a, sum <span class="sc">~</span> CFA,<span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  sum by CFA
+## t = -3.1747, df = 12, p-value = 0.008
+## alternative hypothesis: true difference in means between group TMT_Only and group CFA_10_days is not equal to 0
+## 95 percent confidence interval:
+##  -1.7494097 -0.3254236
+## sample estimates:
+##    mean in group TMT_Only mean in group CFA_10_days 
+##                  2.753833                  3.791250</code></pre>
+<p>CFA-primed mice spent significantly more time displaying pain-related behaviors (t12 = 3.17, p = 0.008, Figure 2I)</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="figure-2.html#cb47-1" tabindex="-1"></a><span class="co"># Frequency of nociceptive responses</span></span>
+<span id="cb47-2"><a href="figure-2.html#cb47-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb47-3"><a href="figure-2.html#cb47-3" tabindex="-1"></a>  <span class="fu">group_by</span>(ID,CFA) <span class="sc">%&gt;%</span></span>
+<span id="cb47-4"><a href="figure-2.html#cb47-4" tabindex="-1"></a>  <span class="fu">filter</span>(Behavior <span class="sc">==</span> <span class="st">&quot;shake&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb47-5"><a href="figure-2.html#cb47-5" tabindex="-1"></a>  <span class="fu">filter</span>(CFA <span class="sc">!=</span> <span class="st">&quot;CFA_1_day&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb47-6"><a href="figure-2.html#cb47-6" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb47-7"><a href="figure-2.html#cb47-7" tabindex="-1"></a>    <span class="at">n=</span><span class="fu">n</span>()</span>
+<span id="cb47-8"><a href="figure-2.html#cb47-8" tabindex="-1"></a>  )</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;ID&#39;. You can override using the `.groups`
+## argument.</code></pre>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="figure-2.html#cb49-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> a, n <span class="sc">~</span> CFA,<span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  n by CFA
+## t = -4.6446, df = 12, p-value = 0.0005657
+## alternative hypothesis: true difference in means between group TMT_Only and group CFA_10_days is not equal to 0
+## 95 percent confidence interval:
+##  -8.753410 -3.163256
+## sample estimates:
+##    mean in group TMT_Only mean in group CFA_10_days 
+##                  12.16667                  18.12500</code></pre>
+<p>and exhibited a higher frequency of pain responses (t12 = 4.64, p &lt; 0.0001, Figure 2J,K) during the 45-second task.</p>
+<p>In separate experiments, we replicated the same experimental setup, but exposed mice to the odor butyric acid (an odor that is repugnant but not fear-inducing) instead of TMT. We found that mice did not exhibit freezing behavior or mechanical hypersensitivity after butyric acid exposure (Figure S3), highlighting that the behavioral responses to TMT represent a specific fear response, and are not related to the other elements of the testing procedures.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="figure-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figure-3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf", "_main.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "edit": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+    "download": ["pdf", "epub"]
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

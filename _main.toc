@@ -1,0 +1,54 @@
+\contentsline {chapter}{About}{3}{chapter*.2}%
+\contentsline {chapter}{Figure 1}{6}{chapter*.3}%
+\contentsline {section}{Time Spent Freezing During TMT}{7}{section*.4}%
+\contentsline {section}{Frequency of Freezing During TMT}{8}{section*.5}%
+\contentsline {section}{Linear relationship between Time With TMT and Length of Freeze}{8}{section*.6}%
+\contentsline {section}{Percent Freezing Split by Minute With TMT}{10}{section*.7}%
+\contentsline {section}{Analysis of Distribution of Length of Freezing Bouts}{11}{section*.8}%
+\contentsline {chapter}{Figure 2}{14}{chapter*.9}%
+\contentsline {section}{Von Frey Paw Sensitivity After TMT}{15}{section*.10}%
+\contentsline {section}{Hot Plate Test}{20}{section*.11}%
+\contentsline {chapter}{Figure 3}{24}{chapter*.12}%
+\contentsline {section}{Overall Effects of Stress and Timepoint}{25}{section*.13}%
+\contentsline {section}{Follow Ups: Effect of CFA at Each Timepoint}{25}{section*.14}%
+\contentsline {chapter}{Figure 4}{30}{chapter*.15}%
+\contentsline {section}{Time Spent Freezing Behavior During TMT}{31}{section*.16}%
+\contentsline {section}{Raw VF scores}{33}{section*.17}%
+\contentsline {section}{VF Thresholds Relative to Baseline Measurements}{34}{section*.18}%
+\contentsline {chapter}{Figure 5}{38}{chapter*.19}%
+\contentsline {section}{Effect of CFA for Saline-Treated Mice}{39}{section*.20}%
+\contentsline {section}{No Effect of CFA for Metyrapone-Treated Mice}{41}{section*.21}%
+\contentsline {chapter}{Figure 6}{44}{chapter*.22}%
+\contentsline {section}{Blood CORT Levels}{45}{section*.23}%
+\contentsline {section}{Percent Freezing During TMT}{46}{section*.24}%
+\contentsline {section}{Freezing Frequency During TMT}{46}{section*.25}%
+\contentsline {section}{Freezing During Each Minute of TMT}{47}{section*.26}%
+\contentsline {section}{Linear Relationship Between Time and Length of Freeze}{48}{section*.27}%
+\contentsline {section}{Analysis of Distribution of Length of Freezing Episodes}{50}{section*.28}%
+\contentsline {section}{Von Frey Thresholds After TMT}{50}{section*.29}%
+\contentsline {subsection}{Left Paws}{50}{section*.30}%
+\contentsline {subsection}{Right Paws}{52}{section*.31}%
+\contentsline {chapter}{Figure 7}{56}{chapter*.32}%
+\contentsline {chapter}{Supplemental Figure 1}{60}{chapter*.33}%
+\contentsline {section}{Raw VF Values}{61}{section*.34}%
+\contentsline {subsection}{Left Paws}{61}{section*.35}%
+\contentsline {subsection}{Right Paws}{62}{section*.36}%
+\contentsline {section}{Within-Subjects' Changes in VF Threasholds}{63}{section*.37}%
+\contentsline {subsection}{Left Paws}{63}{section*.38}%
+\contentsline {subsection}{Right Paws}{64}{section*.39}%
+\contentsline {chapter}{Supplemental Figure 2}{68}{chapter*.40}%
+\contentsline {chapter}{Supplemental Figure 3}{72}{chapter*.41}%
+\contentsline {section}{CORT Levels}{73}{section*.42}%
+\contentsline {section}{Time Spent Freezing During TMT}{73}{section*.43}%
+\contentsline {section}{Freezing Frequency During TMT}{74}{section*.44}%
+\contentsline {section}{Freezing Each Minute With TMT}{75}{section*.45}%
+\contentsline {section}{Linear Relationship Between Time and Length of Freeze}{76}{section*.46}%
+\contentsline {section}{Von Frey Paw Sensitivity}{76}{section*.47}%
+\contentsline {chapter}{Supplemental Figure 4}{80}{chapter*.48}%
+\contentsline {chapter}{Supplemental Figure 5}{84}{chapter*.49}%
+\contentsline {section}{CORT Levels}{85}{section*.50}%
+\contentsline {section}{Time Spent Freezing During TMT}{85}{section*.51}%
+\contentsline {section}{Frequency of Freezing During TMT}{86}{section*.52}%
+\contentsline {section}{Length of Freezing Bouts}{87}{section*.53}%
+\contentsline {section}{Von Frey Sensitivity}{88}{section*.54}%
+\contentsline {chapter}{Supplemental Figure 6}{92}{chapter*.55}%

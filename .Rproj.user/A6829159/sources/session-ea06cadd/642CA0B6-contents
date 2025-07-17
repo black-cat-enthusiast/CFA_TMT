@@ -1,0 +1,131 @@
+# Figure 5 {-}
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(reshape2)
+library(rstatix)
+
+knitr::include_graphics("Figs/5_HP_Mety.png")
+```
+
+**Figure 5. *Enhanced corticosterone production during TMT facilitates nociceptive responses on the hotplate among CFA-primed mice.*** (A) Timeline of experimental procedures. Mice were administered CFA and allowed 10 days to recover. Thirty minutes before a single exposure to TMT, mice were injected (i.p.) with 50 mg / kg metyrapone or Saline control. One week after the single exposure to TMT nociceptive responses during a 45-second exposure to a 52.5-degree hotplate were measured. (B) Raster plots of nociceptive responses during the hotplate test for saline-treated mice. (C) Latency to exhibit the first nociceptive response during testing. (D) CFA-primed mice spent more time exhibiting nociceptive responses, and (E) exhibited a higher frequency of nociceptive responses. (F) The cumulative frequency of nociceptive responses across the session. (G) Raster plots of nociceptive responses across the hotplate test for metyrapone-injected mice. (H) Latency to exhibit the first nociceptive response during the hotplate test. (I) Metraypone injection blocks the enhancing effect of CFA-priming on time spent exhibiting nociceptive behaviors on the hotplate, and (J) the frequency of nociceptive responses during the task. (K) Cumulative frequency of nociceptive responses for metyrapone-treated mice. Data displayed as mean value +/- SEM. \* indicates *p* \< 0.05.
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+# Get data and clean up start times
+get_data_fun <- function(df_name, csv){
+  df_name <- read_csv(csv)
+  start_times <- df_name[df_name$Behavior == "start", ]
+  number_of_behavs <- df_name %>%
+  group_by(ID) %>%
+  summarise(
+    n=n()
+  )
+  df_name$dum <- rep(start_times$Start, number_of_behavs$n)
+  df_name$Start_clean <- df_name$Start - df_name$dum
+  df_name$Stop_clean <- df_name$Stop - df_name$dum
+  return(df_name)
+}
+
+LE_data <- get_data_fun(LE_data,"Data/LE_7days_HP.csv")
+
+# Get info about CFA conditions
+junk <- read_csv("Data/LE_Conditions_info.csv")
+
+junk$CFA <- as.character(junk$CFA)
+junk$CFA <- factor(junk$CFA,levels = c(0,1),labels=c("Naive","CFA"))
+
+junk$Drug <- as.character(junk$Drug)
+junk$Drug <- factor(junk$Drug, levels=c(0,1),labels = c("Saline","Metyrapone"))
+
+BL_number_of_Behavs <- LE_data %>%
+  group_by(ID) %>%
+  summarise(
+    n=n()
+  )
+LE_data$CFA <- rep(junk$CFA, BL_number_of_Behavs$n)
+LE_data$Drug <- rep(junk$Drug, BL_number_of_Behavs$n)
+```
+
+## Effect of CFA for Saline-Treated Mice {-}
+
+```{r}
+a <- LE_data %>%
+  group_by(ID,CFA) %>%
+  filter(Behavior == "shake/flick") %>%
+  filter(Drug == "Saline") %>%
+  summarise(
+    min=min(Start_clean)
+  )
+
+t.test(data = a, min ~ CFA, var.equal = T)
+```
+
+We also investigated whether metyrapone administration prior to TMT exposure would alter nociceptive behaviors on the hotplate in CFA-primed mice. One week after a single TMT exposure, mice were tested on a 52.5 degree hotplate for 45 seconds (Figure 5A). Although there was no group difference in latency to the first nociceptive response (p = 0.91, Figure 5B, C), 
+
+```{r}
+data <- LE_data %>%
+  filter(Behavior == "shake/flick") 
+
+## Saline-treated
+saline <- data %>% 
+  filter(Drug == "Saline")
+
+a <- saline %>%
+  group_by(ID,CFA) %>%
+  summarize(
+    sum=sum(Duration)
+  )
+
+t.test(sum ~ CFA, data = a, var.equal = T)
+```
+
+
+CFA-primed mice that were administered a saline vehicle 30 minutes before TMT spent more time exhibiting nociceptive responses on the hotplate (t20 = 2.4, p = 0.026, Figure 5D), 
+
+```{r}
+a <- saline %>%
+  group_by(ID,CFA) %>%
+  summarise(
+    n=n()
+  )
+
+t.test(n ~ CFA, data = a, var.equal = T)
+```
+
+and a higher frequency of nociceptive responses (t20 = 2.22, p = 0.038, Figure 5E, F). 
+
+## No Effect of CFA for Metyrapone-Treated Mice {-}
+
+```{r}
+mety <- data %>%
+  filter(Drug == "Metyrapone")
+
+a <- mety %>%
+  group_by(ID,CFA) %>%
+  summarize(
+    sum=sum(Duration)
+  )
+
+t.test(sum ~ CFA, data = a, var.equal = T)
+
+a <- mety %>%
+  group_by(ID,CFA) %>%
+  summarise(
+    n=n()
+  )
+
+t.test(n ~ CFA, data = a, var.equal = T)
+```
+
+In contrast, no group differences in hotplate behavior were observed between CFA-primed and pain-naive mice treated with metyrapone prior to TMT exposure (all p > 0.87, Figure 5G-K).
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+# Figure 3 {-}
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(reshape2)
+library(rstatix)
+
+knitr::include_graphics("Figs/3_CORT.png")
+```
+
+**Figure 3. *Mice with a history of injury have higher levels of blood corticosterone after TMT exposure.*** (A) Timeline of experimental procedures. Mice were injected with CFA, allowed 10 days for their injury to recover, and were then exposed to TMT for 5 minutes. Either 30 or 60 minutes after TMT, trunk blood was collected. (B) Although there is no difference in basal levels of blood corticosterone, CFA-primed mice exhibited higher levels of circulating corticosterone at both 30 and 60 minutes after TMT. Data presented as mean +/- SEM. \* indicates *p* \< 0.05, \*\*\* indicates *p* \< 0.001.
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+data <- read_csv("Data/CORT_R.csv")
+
+data$Pain <- as.character(data$Pain)
+data$Pain <- factor(data$Pain,levels=unique(data$Pain))
+```
+
+## Overall Effects of Stress and Timepoint {-}
+
+```{r}
+res <- aov(CORT ~ Stress * Pain, data = data)
+summary(res)
+```
+
+## Follow Ups: Effect of CFA at Each Timepoint {-}
+
+```{r}
+# Basal
+a <- data %>%
+  select(c("ID","Pain","Stress","CORT")) %>%
+  filter(Stress == "Homecage")
+  
+t.test(CORT ~ Pain, data = a, var.equal = T)
+```
+
+Competitive ELISA results showed no significant difference in basal corticosterone levels between groups (p = 0.08).
+
+```{r}
+# 30 minutes after TMT
+a <- data %>%
+  select(c("ID","Pain","Stress","CORT")) %>%
+  filter(Stress == "TMT_30")
+  
+t.test(CORT ~ Pain, data = a, var.equal = T)
+```
+
+```{r}
+# 60 minutes after TMT
+a <- data %>%
+  select(c("ID","Pain","Stress","CORT")) %>%
+  filter(Stress == "TMT_60")
+  
+t.test(CORT ~ Pain, data = a, var.equal = T)
+```
+
+However, both 30 and 60 minutes post-TMT, CFA-primed mice exhibited significantly higher circulating corticosterone levels compared to pain-naive controls (t14 = 3.82, p = 0.0018, t14 = 2.22, p = 0.043, respectively, Figure 3B).

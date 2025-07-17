@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Figure 6 | _main.knit</title>
+  <meta name="description" content="This bookdown project contains raw data, data analyses, and code to generate analyses for the paper “A history of injury enhances affective and sensory responses to predator threat via sensitization of corticosterone release through TRPA1 receptor signaling”." />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Figure 6 | _main.knit" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This bookdown project contains raw data, data analyses, and code to generate analyses for the paper “A history of injury enhances affective and sensory responses to predator threat via sensitization of corticosterone release through TRPA1 receptor signaling”." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Figure 6 | _main.knit" />
+  
+  <meta name="twitter:description" content="This bookdown project contains raw data, data analyses, and code to generate analyses for the paper “A history of injury enhances affective and sensory responses to predator threat via sensitization of corticosterone release through TRPA1 receptor signaling”." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="figure-5.html"/>
+<link rel="next" href="figure-7.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CFA.TMT: A Book of Data</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html"><i class="fa fa-check"></i>Figure 1</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#time-spent-freezing-during-tmt"><i class="fa fa-check"></i>Time Spent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#frequency-of-freezing-during-tmt"><i class="fa fa-check"></i>Frequency of Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#linear-relationship-between-time-with-tmt-and-length-of-freeze"><i class="fa fa-check"></i>Linear relationship between Time With TMT and Length of Freeze</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#percent-freezing-split-by-minute-with-tmt"><i class="fa fa-check"></i>Percent Freezing Split by Minute With TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-1.html"><a href="figure-1.html#analysis-of-distribution-of-length-of-freezing-bouts"><i class="fa fa-check"></i>Analysis of Distribution of Length of Freezing Bouts</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-2.html"><a href="figure-2.html"><i class="fa fa-check"></i>Figure 2</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-2.html"><a href="figure-2.html#von-frey-paw-sensitivity-after-tmt"><i class="fa fa-check"></i>Von Frey Paw Sensitivity After TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-2.html"><a href="figure-2.html#hot-plate-test"><i class="fa fa-check"></i>Hot Plate Test</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-3.html"><a href="figure-3.html"><i class="fa fa-check"></i>Figure 3</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-3.html"><a href="figure-3.html#overall-effects-of-stress-and-timepoint"><i class="fa fa-check"></i>Overall Effects of Stress and Timepoint</a></li>
+<li class="chapter" data-level="" data-path="figure-3.html"><a href="figure-3.html#follow-ups-effect-of-cfa-at-each-timepoint"><i class="fa fa-check"></i>Follow Ups: Effect of CFA at Each Timepoint</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html"><i class="fa fa-check"></i>Figure 4</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html#time-spent-freezing-behavior-during-tmt"><i class="fa fa-check"></i>Time Spent Freezing Behavior During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html#raw-vf-scores"><i class="fa fa-check"></i>Raw VF scores</a></li>
+<li class="chapter" data-level="" data-path="figure-4.html"><a href="figure-4.html#vf-thresholds-relative-to-baseline-measurements"><i class="fa fa-check"></i>VF Thresholds Relative to Baseline Measurements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-5.html"><a href="figure-5.html"><i class="fa fa-check"></i>Figure 5</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-5.html"><a href="figure-5.html#effect-of-cfa-for-saline-treated-mice"><i class="fa fa-check"></i>Effect of CFA for Saline-Treated Mice</a></li>
+<li class="chapter" data-level="" data-path="figure-5.html"><a href="figure-5.html#no-effect-of-cfa-for-metyrapone-treated-mice"><i class="fa fa-check"></i>No Effect of CFA for Metyrapone-Treated Mice</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html"><i class="fa fa-check"></i>Figure 6</a>
+<ul>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#blood-cort-levels"><i class="fa fa-check"></i>Blood CORT Levels</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#percent-freezing-during-tmt"><i class="fa fa-check"></i>Percent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#freezing-frequency-during-tmt"><i class="fa fa-check"></i>Freezing Frequency During TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#freezing-during-each-minute-of-tmt"><i class="fa fa-check"></i>Freezing During Each Minute of TMT</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#linear-relationship-between-time-and-length-of-freeze"><i class="fa fa-check"></i>Linear Relationship Between Time and Length of Freeze</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#analysis-of-distribution-of-length-of-freezing-episodes"><i class="fa fa-check"></i>Analysis of Distribution of Length of Freezing Episodes</a></li>
+<li class="chapter" data-level="" data-path="figure-6.html"><a href="figure-6.html#von-frey-thresholds-after-tmt"><i class="fa fa-check"></i>Von Frey Thresholds After TMT</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="figure-7.html"><a href="figure-7.html"><i class="fa fa-check"></i>Figure 7</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-1.html"><a href="supplemental-figure-1.html"><i class="fa fa-check"></i>Supplemental Figure 1</a>
+<ul>
+<li class="chapter" data-level="" data-path="supplemental-figure-1.html"><a href="supplemental-figure-1.html#raw-vf-values"><i class="fa fa-check"></i>Raw VF Values</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-1.html"><a href="supplemental-figure-1.html#within-subjects-changes-in-vf-threasholds"><i class="fa fa-check"></i>Within-Subjects’ Changes in VF Threasholds</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-2.html"><a href="supplemental-figure-2.html"><i class="fa fa-check"></i>Supplemental Figure 2</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html"><i class="fa fa-check"></i>Supplemental Figure 3</a>
+<ul>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#cort-levels"><i class="fa fa-check"></i>CORT Levels</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#time-spent-freezing-during-tmt-1"><i class="fa fa-check"></i>Time Spent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#freezing-frequency-during-tmt-1"><i class="fa fa-check"></i>Freezing Frequency During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#freezing-each-minute-with-tmt"><i class="fa fa-check"></i>Freezing Each Minute With TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#linear-relationship-between-time-and-length-of-freeze-1"><i class="fa fa-check"></i>Linear Relationship Between Time and Length of Freeze</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-3.html"><a href="supplemental-figure-3.html#von-frey-paw-sensitivity"><i class="fa fa-check"></i>Von Frey Paw Sensitivity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-4.html"><a href="supplemental-figure-4.html"><i class="fa fa-check"></i>Supplemental Figure 4</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html"><i class="fa fa-check"></i>Supplemental Figure 5</a>
+<ul>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#cort-levels-1"><i class="fa fa-check"></i>CORT Levels</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#time-spent-freezing-during-tmt-2"><i class="fa fa-check"></i>Time Spent Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#frequency-of-freezing-during-tmt-1"><i class="fa fa-check"></i>Frequency of Freezing During TMT</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#length-of-freezing-bouts"><i class="fa fa-check"></i>Length of Freezing Bouts</a></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-5.html"><a href="supplemental-figure-5.html#von-frey-sensitivity"><i class="fa fa-check"></i>Von Frey Sensitivity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="supplemental-figure-6.html"><a href="supplemental-figure-6.html"><i class="fa fa-check"></i>Supplemental Figure 6</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="figure-6" class="section level1 unnumbered hasAnchor">
+<h1>Figure 6<a href="figure-6.html#figure-6" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="Figs/6_HC30031_panel.png" width="1125" /></p>
+<p><strong>Figure 6. <em>Sensitization of TRPA1 signaling regulates enhanced circulating corticosterone and freezing during TMT among CFA-primed mice.</em></strong> (A) Timeline of experimental procedures. Mice were injected with CFA and given 10 days to recover. Thirty minutes before a single TMT exposure, mice were injected with the TRPA-1 antagonist HC30031. (B) Raster plots of freezing behavior across the TMT session. (C) TRPA-1 antagonism normalizes circulating levels of corticosterone between pain-naive and CFA-primed mice. (D) TRPA-1 antagonism also normalizes levels of freezing during TMT exposure for CFA-primed mice. (E) Blockade of TRPA-1 signalling does not prevent the increase in freezing across the session. (F) Linear relationships between time spent with TMT and length of freezing episodes. (G) Density plots showing that TRPA-1 antagonism normalized the difference in length for freezing bouts. (H) Sensory responses after TMT in the left hind paws. (I) Sensory responses after TMT in the right hind paws. Data displayed as mean +/- SEM. *** indicates <em>p</em> &lt; 0.001.</p>
+<p>We administered the TRPA1 receptor antagonist HC30031 (30 mg/kg, i.p.) to CFA-primed and pain-naive mice 30 minutes before a single five-minute TMT exposure (Figure 6A). TRPA1 antagonism did not prevent TMT-induced freezing behavior (Figure 6B); mice still spent significantly more time freezing during the TMT session compared to a baseline session without TMT (t31 = 13.18 , p &lt; 0.001; data not shown).</p>
+<div id="blood-cort-levels" class="section level2 unnumbered hasAnchor">
+<h2>Blood CORT Levels<a href="figure-6.html#blood-cort-levels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="figure-6.html#cb95-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> CORT_data <span class="sc">%&gt;%</span></span>
+<span id="cb95-2"><a href="figure-6.html#cb95-2" tabindex="-1"></a>  <span class="fu">filter</span>(Drug <span class="sc">==</span> <span class="st">&quot;HC30031&quot;</span>) </span>
+<span id="cb95-3"><a href="figure-6.html#cb95-3" tabindex="-1"></a></span>
+<span id="cb95-4"><a href="figure-6.html#cb95-4" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">data =</span> a, CORT <span class="sc">~</span> Pain, <span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  CORT by Pain
+## t = 0.081537, df = 14, p-value = 0.9362
+## alternative hypothesis: true difference in means between group Naive and group CFA is not equal to 0
+## 95 percent confidence interval:
+##  -349.6575  377.2933
+## sample estimates:
+## mean in group Naive   mean in group CFA 
+##            648.0151            634.1972</code></pre>
+<p>However, blocking TRPA1 receptors during TMT exposure occluded enhanced corticosterone release (p = 0.93; Figure 6C).</p>
+</div>
+<div id="percent-freezing-during-tmt" class="section level2 unnumbered hasAnchor">
+<h2>Percent Freezing During TMT<a href="figure-6.html#percent-freezing-during-tmt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="figure-6.html#cb97-1" tabindex="-1"></a>b <span class="ot">&lt;-</span> data  <span class="sc">%&gt;%</span></span>
+<span id="cb97-2"><a href="figure-6.html#cb97-2" tabindex="-1"></a>  <span class="fu">filter</span>(Behavior <span class="sc">==</span> <span class="st">&quot;freeze&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb97-3"><a href="figure-6.html#cb97-3" tabindex="-1"></a>  <span class="fu">group_by</span>(ID,Condition) <span class="sc">%&gt;%</span></span>
+<span id="cb97-4"><a href="figure-6.html#cb97-4" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb97-5"><a href="figure-6.html#cb97-5" tabindex="-1"></a>    <span class="at">sum=</span><span class="fu">sum</span>(Duration),</span>
+<span id="cb97-6"><a href="figure-6.html#cb97-6" tabindex="-1"></a>    <span class="at">Number=</span><span class="fu">n</span>(),</span>
+<span id="cb97-7"><a href="figure-6.html#cb97-7" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb97-8"><a href="figure-6.html#cb97-8" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Perc =</span> (sum <span class="sc">/</span> <span class="dv">300</span>)<span class="sc">*</span><span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb97-9"><a href="figure-6.html#cb97-9" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Av_DUR =</span> (sum <span class="sc">/</span> Number)) </span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;ID&#39;. You can override using the `.groups`
+## argument.</code></pre>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="figure-6.html#cb99-1" tabindex="-1"></a><span class="fu">t.test</span>(Perc<span class="sc">~</span>Condition,<span class="at">data=</span>b,<span class="at">var.equal=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  Perc by Condition
+## t = 1.1266, df = 30, p-value = 0.2688
+## alternative hypothesis: true difference in means between group Naive and group CFA is not equal to 0
+## 95 percent confidence interval:
+##  -2.872619  9.941494
+## sample estimates:
+## mean in group Naive   mean in group CFA 
+##            24.38940            20.85496</code></pre>
+<p>HC30031 treatment also prevented exaggerated freezing behavior for CFA-primed mice (p = 0.27; Figure 6D)</p>
+</div>
+<div id="freezing-frequency-during-tmt" class="section level2 unnumbered hasAnchor">
+<h2>Freezing Frequency During TMT<a href="figure-6.html#freezing-frequency-during-tmt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="figure-6.html#cb101-1" tabindex="-1"></a>b <span class="ot">&lt;-</span> data  <span class="sc">%&gt;%</span></span>
+<span id="cb101-2"><a href="figure-6.html#cb101-2" tabindex="-1"></a>  <span class="fu">filter</span>(Behavior <span class="sc">==</span> <span class="st">&quot;freeze&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb101-3"><a href="figure-6.html#cb101-3" tabindex="-1"></a>  <span class="fu">group_by</span>(ID,Condition) <span class="sc">%&gt;%</span></span>
+<span id="cb101-4"><a href="figure-6.html#cb101-4" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb101-5"><a href="figure-6.html#cb101-5" tabindex="-1"></a>    <span class="at">sum=</span><span class="fu">sum</span>(Duration),</span>
+<span id="cb101-6"><a href="figure-6.html#cb101-6" tabindex="-1"></a>    <span class="at">Number=</span><span class="fu">n</span>(),</span>
+<span id="cb101-7"><a href="figure-6.html#cb101-7" tabindex="-1"></a>  ) </span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;ID&#39;. You can override using the `.groups`
+## argument.</code></pre>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="figure-6.html#cb103-1" tabindex="-1"></a><span class="fu">t.test</span>(Number<span class="sc">~</span>Condition,<span class="at">data=</span>b,<span class="at">var.equal=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  Number by Condition
+## t = -0.76073, df = 30, p-value = 0.4528
+## alternative hypothesis: true difference in means between group Naive and group CFA is not equal to 0
+## 95 percent confidence interval:
+##  -8.290404  3.790404
+## sample estimates:
+## mean in group Naive   mean in group CFA 
+##              35.875              38.125</code></pre>
+<p>and normalized the number of freezing episodes (p = 0.45, Figure 6E).</p>
+</div>
+<div id="freezing-during-each-minute-of-tmt" class="section level2 unnumbered hasAnchor">
+<h2>Freezing During Each Minute of TMT<a href="figure-6.html#freezing-during-each-minute-of-tmt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="figure-6.html#cb105-1" tabindex="-1"></a><span class="co"># % Freezing each minute</span></span>
+<span id="cb105-2"><a href="figure-6.html#cb105-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb105-3"><a href="figure-6.html#cb105-3" tabindex="-1"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb105-4"><a href="figure-6.html#cb105-4" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Bins =</span> <span class="fu">cut</span>(</span>
+<span id="cb105-5"><a href="figure-6.html#cb105-5" tabindex="-1"></a>    Start_clean,</span>
+<span id="cb105-6"><a href="figure-6.html#cb105-6" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="dv">5</span>,</span>
+<span id="cb105-7"><a href="figure-6.html#cb105-7" tabindex="-1"></a>    <span class="at">labels=</span><span class="fu">c</span>(<span class="st">&quot;1&quot;</span>,<span class="st">&quot;2&quot;</span>,<span class="st">&quot;3&quot;</span>,<span class="st">&quot;4&quot;</span>,<span class="st">&quot;5&quot;</span>)</span>
+<span id="cb105-8"><a href="figure-6.html#cb105-8" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb105-9"><a href="figure-6.html#cb105-9" tabindex="-1"></a>  <span class="fu">group_by</span>(ID, Behavior,Condition, Bins) <span class="sc">%&gt;%</span></span>
+<span id="cb105-10"><a href="figure-6.html#cb105-10" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb105-11"><a href="figure-6.html#cb105-11" tabindex="-1"></a>    <span class="at">sum =</span> <span class="fu">sum</span> (Duration)</span>
+<span id="cb105-12"><a href="figure-6.html#cb105-12" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb105-13"><a href="figure-6.html#cb105-13" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Perc =</span> (sum <span class="sc">/</span> <span class="dv">60</span>)<span class="sc">*</span><span class="dv">100</span> ) <span class="sc">%&gt;%</span></span>
+<span id="cb105-14"><a href="figure-6.html#cb105-14" tabindex="-1"></a>  <span class="fu">filter</span>(Behavior <span class="sc">==</span> <span class="st">&quot;freeze&quot;</span>)</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;ID&#39;, &#39;Behavior&#39;, &#39;Condition&#39;. You can
+## override using the `.groups` argument.</code></pre>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="figure-6.html#cb107-1" tabindex="-1"></a>anova <span class="ot">&lt;-</span> <span class="fu">aov</span>(Perc<span class="sc">~</span>Bins<span class="sc">*</span>Condition,<span class="at">data=</span>a)</span>
+<span id="cb107-2"><a href="figure-6.html#cb107-2" tabindex="-1"></a><span class="fu">summary</span>(anova)</span></code></pre></div>
+<pre><code>##                 Df Sum Sq Mean Sq F value Pr(&gt;F)    
+## Bins             4  31345    7836  34.633 &lt;2e-16 ***
+## Condition        1    527     527   2.331  0.129    
+## Bins:Condition   4    279      70   0.308  0.872    
+## Residuals      145  32808     226                   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>HC30031-treated mice exhibited a clear increase in time spent freezing across the five-minute exposure (F4,145 = 34.63, p &lt; 0.001), which was not different for CFA-primed and pain-naive mice (p = 0.12, Figure 6F).</p>
+</div>
+<div id="linear-relationship-between-time-and-length-of-freeze" class="section level2 unnumbered hasAnchor">
+<h2>Linear Relationship Between Time and Length of Freeze<a href="figure-6.html#linear-relationship-between-time-and-length-of-freeze" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="figure-6.html#cb109-1" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">lm</span>(Duration<span class="sc">~</span>Start_clean <span class="sc">*</span> Condition, <span class="at">data=</span>data)</span>
+<span id="cb109-2"><a href="figure-6.html#cb109-2" tabindex="-1"></a><span class="fu">summary</span>(b)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = Duration ~ Start_clean * Condition, data = data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.1919 -1.0243 -0.5237  0.2493 21.3420 
+## 
+## Coefficients:
+##                            Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)               1.1074246  0.1251720   8.847  &lt; 2e-16 ***
+## Start_clean               0.0048383  0.0007297   6.630 4.28e-11 ***
+## ConditionCFA              0.0852233  0.1805967   0.472   0.6370    
+## Start_clean:ConditionCFA -0.0022495  0.0010320  -2.180   0.0294 *  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.96 on 2050 degrees of freedom
+##   (64 observations deleted due to missingness)
+## Multiple R-squared:  0.0301, Adjusted R-squared:  0.02868 
+## F-statistic:  21.2 on 3 and 2050 DF,  p-value: 1.589e-13</code></pre>
+<p>The length of freezing episodes increased across the five-minute session with TMT (t2050 = 6.63, p &lt; 0.001, Figure 6G), which differed for CFA-primed and pain-naive mice (t2050 = 2.18, p = 0.029).</p>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="figure-6.html#cb111-1" tabindex="-1"></a>Naives <span class="ot">&lt;-</span> data[data<span class="sc">$</span>Condition <span class="sc">==</span> <span class="st">&quot;Naive&quot;</span>, ]</span>
+<span id="cb111-2"><a href="figure-6.html#cb111-2" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data=</span>Naives, Duration<span class="sc">~</span>Start_clean)</span>
+<span id="cb111-3"><a href="figure-6.html#cb111-3" tabindex="-1"></a><span class="fu">summary</span>(c)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = Duration ~ Start_clean, data = Naives)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.1919 -1.0989 -0.5997  0.2496 21.3420 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 1.1074246  0.1367865   8.096 1.61e-15 ***
+## Start_clean 0.0048383  0.0007975   6.067 1.83e-09 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2.141 on 1017 degrees of freedom
+##   (32 observations deleted due to missingness)
+## Multiple R-squared:  0.03493,    Adjusted R-squared:  0.03398 
+## F-statistic: 36.81 on 1 and 1017 DF,  p-value: 1.834e-09</code></pre>
+<p>For pain-naive mice, each additional second spent with TMT was associated with a predicted increase in the length of freezing bouts of 48.4ms.</p>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="figure-6.html#cb113-1" tabindex="-1"></a>CFAs <span class="ot">&lt;-</span> data[data<span class="sc">$</span>Condition <span class="sc">==</span> <span class="st">&quot;CFA&quot;</span>, ]</span>
+<span id="cb113-2"><a href="figure-6.html#cb113-2" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data=</span>CFAs, Duration<span class="sc">~</span>Start_clean)</span>
+<span id="cb113-3"><a href="figure-6.html#cb113-3" tabindex="-1"></a><span class="fu">summary</span>(d)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = Duration ~ Start_clean, data = CFAs)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.6982 -0.9561 -0.4742  0.2435 19.1882 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 1.1926480  0.1170778  10.187  &lt; 2e-16 ***
+## Start_clean 0.0025888  0.0006563   3.944 8.54e-05 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.762 on 1033 degrees of freedom
+##   (32 observations deleted due to missingness)
+## Multiple R-squared:  0.01484,    Adjusted R-squared:  0.01388 
+## F-statistic: 15.56 on 1 and 1033 DF,  p-value: 8.542e-05</code></pre>
+<p>In contrast, each additional second with TMT was associated with a predicted increase in the length of the freeze of 25.88ms for CFA-primed mice.</p>
+</div>
+<div id="analysis-of-distribution-of-length-of-freezing-episodes" class="section level2 unnumbered hasAnchor">
+<h2>Analysis of Distribution of Length of Freezing Episodes<a href="figure-6.html#analysis-of-distribution-of-length-of-freezing-episodes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="figure-6.html#cb115-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> frz_data</span>
+<span id="cb115-2"><a href="figure-6.html#cb115-2" tabindex="-1"></a>cfa_HC3_durations <span class="ot">&lt;-</span> a<span class="sc">$</span>Duration[a<span class="sc">$</span>Condition <span class="sc">==</span> <span class="st">&quot;CFA&quot;</span>]</span>
+<span id="cb115-3"><a href="figure-6.html#cb115-3" tabindex="-1"></a>naive_HC3_durations <span class="ot">&lt;-</span> a<span class="sc">$</span>Duration[a<span class="sc">$</span>Condition <span class="sc">==</span> <span class="st">&quot;Naive&quot;</span>]</span>
+<span id="cb115-4"><a href="figure-6.html#cb115-4" tabindex="-1"></a></span>
+<span id="cb115-5"><a href="figure-6.html#cb115-5" tabindex="-1"></a><span class="fu">ks.test</span>(cfa_HC3_durations, naive_HC3_durations)</span></code></pre></div>
+<pre><code>## Warning in ks.test.default(cfa_HC3_durations, naive_HC3_durations): p-value
+## will be approximate in the presence of ties</code></pre>
+<pre><code>## 
+##  Asymptotic two-sample Kolmogorov-Smirnov test
+## 
+## data:  cfa_HC3_durations and naive_HC3_durations
+## D = 0.045232, p-value = 0.2442
+## alternative hypothesis: two-sided</code></pre>
+<p>There was no group difference in the distribution of individual bouts of freezing between CFA-primed and injury naive mice (p = 0.24, Figure 6H).</p>
+</div>
+<div id="von-frey-thresholds-after-tmt" class="section level2 unnumbered hasAnchor">
+<h2>Von Frey Thresholds After TMT<a href="figure-6.html#von-frey-thresholds-after-tmt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="left-paws" class="section level3 unnumbered hasAnchor">
+<h3>Left Paws<a href="figure-6.html#left-paws" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="figure-6.html#cb118-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> VF_L <span class="sc">%&gt;%</span></span>
+<span id="cb118-2"><a href="figure-6.html#cb118-2" tabindex="-1"></a>  <span class="fu">melt</span>(<span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">&quot;ID&quot;</span>,<span class="st">&quot;Condition&quot;</span>)) </span>
+<span id="cb118-3"><a href="figure-6.html#cb118-3" tabindex="-1"></a></span>
+<span id="cb118-4"><a href="figure-6.html#cb118-4" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">aov</span>(value <span class="sc">~</span> variable <span class="sc">*</span> Condition, <span class="at">data =</span> a)</span>
+<span id="cb118-5"><a href="figure-6.html#cb118-5" tabindex="-1"></a><span class="fu">summary</span>(b)</span></code></pre></div>
+<pre><code>##                    Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## variable            4 1.4175  0.3544  13.043 5.46e-08 ***
+## Condition           1 1.0552  1.0552  38.836 3.04e-08 ***
+## variable:Condition  4 0.8094  0.2024   7.448 4.67e-05 ***
+## Residuals          70 1.9019  0.0272                     
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="figure-6.html#cb120-1" tabindex="-1"></a>a <span class="sc">%&gt;%</span></span>
+<span id="cb120-2"><a href="figure-6.html#cb120-2" tabindex="-1"></a>  <span class="fu">group_by</span>(Condition) <span class="sc">%&gt;%</span> </span>
+<span id="cb120-3"><a href="figure-6.html#cb120-3" tabindex="-1"></a>  <span class="fu">pairwise_t_test</span>(value <span class="sc">~</span> variable, <span class="at">paired =</span> T)</span></code></pre></div>
+<pre><code>## # A tibble: 20 × 11
+##    Condition .y.   group1   group2      n1    n2 statistic    df       p   p.adj
+##  * &lt;fct&gt;     &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;    &lt;int&gt; &lt;int&gt;     &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
+##  1 Naive     value Baseline 3 hours      8     8    2.01       7 8.4 e-2 7.73e-1
+##  2 Naive     value Baseline 24 hours     8     8    1.12       7 3.01e-1 1   e+0
+##  3 Naive     value Baseline 3 days       8     8    1.88       7 1.02e-1 8.08e-1
+##  4 Naive     value Baseline 7 days       8     8    2.07       7 7.7 e-2 7.73e-1
+##  5 Naive     value 3 hours  24 hours     8     8   -0.858      7 4.19e-1 1   e+0
+##  6 Naive     value 3 hours  3 days       8     8   -1.89       7 1.01e-1 8.08e-1
+##  7 Naive     value 3 hours  7 days       8     8   -1.34       7 2.23e-1 1   e+0
+##  8 Naive     value 24 hours 3 days       8     8   -0.251      7 8.09e-1 1   e+0
+##  9 Naive     value 24 hours 7 days       8     8   -0.0391     7 9.7 e-1 1   e+0
+## 10 Naive     value 3 days   7 days       8     8    0.833      7 4.32e-1 1   e+0
+## 11 CFA       value Baseline 3 hours      8     8    4.45       7 3   e-3 1.8 e-2
+## 12 CFA       value Baseline 24 hours     8     8    8.10       7 8.45e-5 6.76e-4
+## 13 CFA       value Baseline 3 days       8     8   14.6        7 1.71e-6 1.71e-5
+## 14 CFA       value Baseline 7 days       8     8    9.46       7 3.07e-5 2.76e-4
+## 15 CFA       value 3 hours  24 hours     8     8    2.98       7 2.1 e-2 1.04e-1
+## 16 CFA       value 3 hours  3 days       8     8    5.37       7 1   e-3 7   e-3
+## 17 CFA       value 3 hours  7 days       8     8    2.91       7 2.3 e-2 1.04e-1
+## 18 CFA       value 24 hours 3 days       8     8   -0.349      7 7.37e-1 7.37e-1
+## 19 CFA       value 24 hours 7 days       8     8   -1.61       7 1.52e-1 3.04e-1
+## 20 CFA       value 3 days   7 days       8     8   -2.51       7 4   e-2 1.21e-1
+## # ℹ 1 more variable: p.adj.signif &lt;chr&gt;</code></pre>
+</div>
+<div id="right-paws" class="section level3 unnumbered hasAnchor">
+<h3>Right Paws<a href="figure-6.html#right-paws" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="figure-6.html#cb122-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> VF_R <span class="sc">%&gt;%</span></span>
+<span id="cb122-2"><a href="figure-6.html#cb122-2" tabindex="-1"></a>  <span class="fu">melt</span>(<span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">&quot;ID&quot;</span>,<span class="st">&quot;Condition&quot;</span>)) </span>
+<span id="cb122-3"><a href="figure-6.html#cb122-3" tabindex="-1"></a></span>
+<span id="cb122-4"><a href="figure-6.html#cb122-4" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">aov</span>(value <span class="sc">~</span> variable <span class="sc">*</span> Condition, <span class="at">data =</span> a)</span>
+<span id="cb122-5"><a href="figure-6.html#cb122-5" tabindex="-1"></a><span class="fu">summary</span>(b)</span></code></pre></div>
+<pre><code>##                    Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## variable            4  1.338  0.3345   13.98 1.96e-08 ***
+## Condition           1  2.163  2.1635   90.44 3.09e-14 ***
+## variable:Condition  4  1.243  0.3108   12.99 5.77e-08 ***
+## Residuals          70  1.675  0.0239                     
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="figure-6.html#cb124-1" tabindex="-1"></a>a <span class="sc">%&gt;%</span></span>
+<span id="cb124-2"><a href="figure-6.html#cb124-2" tabindex="-1"></a>  <span class="fu">group_by</span>(Condition) <span class="sc">%&gt;%</span> </span>
+<span id="cb124-3"><a href="figure-6.html#cb124-3" tabindex="-1"></a>  <span class="fu">pairwise_t_test</span>(value <span class="sc">~</span> variable, <span class="at">paired =</span> T) </span></code></pre></div>
+<pre><code>## # A tibble: 20 × 11
+##    Condition .y.   group1   group2      n1    n2 statistic    df       p   p.adj
+##  * &lt;fct&gt;     &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;    &lt;int&gt; &lt;int&gt;     &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
+##  1 Naive     value Baseline 3 hours      8     8    3.06       7 1.8 e-2 1.83e-1
+##  2 Naive     value Baseline 24 hours     8     8    1.23       7 2.57e-1 1   e+0
+##  3 Naive     value Baseline 3 days       8     8    0.568      7 5.88e-1 1   e+0
+##  4 Naive     value Baseline 7 days       8     8    0.564      7 5.9 e-1 1   e+0
+##  5 Naive     value 3 hours  24 hours     8     8   -2.32       7 5.3 e-2 3.73e-1
+##  6 Naive     value 3 hours  3 days       8     8   -2.96       7 2.1 e-2 1.83e-1
+##  7 Naive     value 3 hours  7 days       8     8   -3.06       7 1.8 e-2 1.83e-1
+##  8 Naive     value 24 hours 3 days       8     8   -0.369      7 7.23e-1 1   e+0
+##  9 Naive     value 24 hours 7 days       8     8   -0.607      7 5.63e-1 1   e+0
+## 10 Naive     value 3 days   7 days       8     8   -0.0573     7 9.56e-1 1   e+0
+## 11 CFA       value Baseline 3 hours      8     8    6.55       7 3.18e-4 2   e-3
+## 12 CFA       value Baseline 24 hours     8     8   19.7        7 2.17e-7 2.17e-6
+## 13 CFA       value Baseline 3 days       8     8   16.1        7 8.61e-7 7.75e-6
+## 14 CFA       value Baseline 7 days       8     8    5.64       7 7.85e-4 5   e-3
+## 15 CFA       value 3 hours  24 hours     8     8    9.28       7 3.49e-5 2.79e-4
+## 16 CFA       value 3 hours  3 days       8     8    4.23       7 4   e-3 1.5 e-2
+## 17 CFA       value 3 hours  7 days       8     8    2.07       7 7.7 e-2 2.31e-1
+## 18 CFA       value 24 hours 3 days       8     8   -4.46       7 3   e-3 1.5 e-2
+## 19 CFA       value 24 hours 7 days       8     8   -2.06       7 7.8 e-2 2.31e-1
+## 20 CFA       value 3 days   7 days       8     8   -0.267      7 7.97e-1 7.97e-1
+## # ℹ 1 more variable: p.adj.signif &lt;chr&gt;</code></pre>
+<p>VF measurements after TMT exposure indicated that TRPA-1 administration did not affect TMT-induced mechanical hypersensitivity in CFA-primed mice. TMT induced sensitivity across the time course (F4,70 = 13.04, p &lt; 0.001) that differed for pain-naive and CFA-primed mice (Left paws: F4,70 = 7.44, p &lt;0.001, Figure 6I; Right hind paws: F4,70 = 12.99, p &lt;0.001, Figure 6J). Specifically, mice with a history of CFA exhibited prolonged mechanical hypersensitivity in both hind paws after the five-minute encounter with TMT (all p &lt; 0.018 relative to baseline measurements).</p>
+<p>To test whether the noxious vehicle DMSO used to dilute HC30031 has any effects on behavioral outcomes, we injected mice with and without a history of injury with 10% DMSO 30 minutes before a five-minute TMT exposure (Figure S5). We found that CFA-primed mice treated with DMSO froze more during TMT than injury-naive DMSO-injected controls, and exhibited prolonged mechanical hypersensitivity afterwards. Together, these findings suggest that TRPA-1 antagonism blocks the enhancement in freezing during TMT that is caused by a history of CFA injury (Figure S6).</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="figure-5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figure-7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["_main.pdf", "_main.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "edit": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+    "download": ["pdf", "epub"]
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

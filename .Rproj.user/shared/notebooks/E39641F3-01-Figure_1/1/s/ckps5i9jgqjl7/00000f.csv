@@ -1,0 +1,9 @@
+"0","library(kSamples)"
+"0",""
+"0","a <- data %>% "
+"0","  filter(CFA != ""CFA_1D"") %>%"
+"0","  filter(PGE2 != ""PGE2"") %>%"
+"0","  filter(Behavior == ""freeze"")"
+"2","Error in .checkTypos(e, names_x) : 
+  Object 'CFA' not found amongst [ID, Behavior, Start, Stop, Duration, dum, Start_clean, Stop_clean, Condition]
+"

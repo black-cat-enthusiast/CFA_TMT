@@ -1,0 +1,13 @@
+--- 
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  This bookdown project contains raw data, data analyses, and code to generate analyses for the paper "A history of injury enhances affective and sensory responses to predator threat via sensitization of corticosterone release through TRPA1 receptor signaling".
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+
