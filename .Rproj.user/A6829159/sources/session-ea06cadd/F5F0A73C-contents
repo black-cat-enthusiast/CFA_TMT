@@ -1,5 +1,0 @@
-document.addEventListener("DOMContentLoaded", function () {
-  if (typeof gitbook !== "undefined" && gitbook.toolbar) {
-    gitbook.toolbar.toggleColorScheme("sepia");
-  }
-});
