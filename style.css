@@ -19,7 +19,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333333;
-  background-color: #fdfdfd;
+  background-color: #fffde7;
 }
 
 /* --- HEADERS --- */
@@ -48,9 +48,17 @@ h3 {
 }
 
 /* --- LINKS --- */
-a {
-  color: #800020;
-  text-decoration: none;
+.book .book-summary a {
+  color: #444; 
+}
+
+.book .book-summary a:hover {
+  color: #800020 !important; 
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: #800020 !important;
+  font-weight: bold;         
 }
 
 a:hover {
